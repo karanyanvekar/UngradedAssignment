@@ -43,10 +43,10 @@ public class MainClass {
 				
 			while(!I.hasCrossed) {
 					
-				S.isOn = ran.nextInt(100) < p * 100.0;
-				S1.isOn = ran.nextInt(100) < p * 100.0;
-				S2.isOn = ran.nextInt(100) < p * 100.0;
-				S3.isOn = ran.nextInt(100) < p * 100.0;
+				S.isOn = ran.nextInt(100) < p * 100.0; //The present Sensor 
+				S1.isOn = ran.nextInt(100) < p * 100.0; // Forward
+				S2.isOn = ran.nextInt(100) < p * 100.0; // Forward Left
+				S3.isOn = ran.nextInt(100) < p * 100.0; // Forward Right
 
 					
 				I.hasMoved = (!S.isOn) && (!S1.isOn || !S2.isOn || !S3.isOn);
@@ -65,6 +65,8 @@ public class MainClass {
 			t_avg += t;
 			
 		}
+		//The Game has ended  
+		
 		t_avg /= 10;
 		System.out.println(t_avg + " seconds.");
 		sc.close();
