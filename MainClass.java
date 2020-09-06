@@ -14,6 +14,7 @@ public class MainClass {
 		System.out.print("Enter the width of the border: ");
 		int W = sc.nextInt();
 		int t_avg = 0;
+		
 //Making objects of the classes		
 		
 		Border B = new Border(W);
@@ -65,6 +66,7 @@ public class MainClass {
 			t_avg += t;
 			
 		}
+//The Game Ends
 		t_avg /= 10;
 		System.out.println(t_avg + " seconds.");
 		sc.close();
