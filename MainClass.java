@@ -65,7 +65,6 @@ public class MainClass {
 			t_avg += t;
 			
 		}
-		//The Game has ended
 		t_avg /= 10;
 		System.out.println(t_avg + " seconds.");
 		sc.close();
